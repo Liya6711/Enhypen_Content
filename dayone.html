@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENHYPEN - Dark Blood & Romance performance</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+
+    <!-- Efek Latar Belakang Estetik (Vampire Atmospheric Dust) -->
+    <div class="bg-glow-effect"></div>
+
+    <!-- Header / Navigasi (Sudah dengan Alas Transparan & Hamburger Menu) -->
+    <header>
+        <div class="logo">ENHYPEN</div>
+        <!-- Checkbox untuk memicu menu mobile tanpa JS -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">Profile</a>
+            <a href="#albums">Discography</a>
+            <a href="#members">Members</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>MANIFEST IN BLOOD</h1>
+            <p>Choose Your Fate. Walk The Line.</p>
+            <button class="btn-explore" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});">Enter the Carnival</button>
+        </div>
+    </section>
+
+    <!-- Konten Utama -->
+    <main class="container">
+        
+        <!-- Tentang / Profil -->
+        <section id="about">
+            <div class="about-card-box">
+                <h2 class="section-title">The Bloodline</h2>
+                <p class="about-text">
+                    Dilahirkan dari panggung kompetisi I-LAND, ENHYPEN adalah representasi dari tujuh jiwa yang saling terhubung untuk mendobrak batasan baru dunia musik. Membawa narasi sinematik yang gelap, elegan, dan penuh misteri, mereka mendefinisikan ulang makna pertumbuhan dan takdir dalam industri K-Pop modern.
+                </p>
+            </div>
+        </section>
+
+        <!-- Diskografi / Album -->
+        <section id="albums">
+            <h2 class="section-title">The Chronicles</h2>
+            
+            <div class="album-grid">
+                <!-- ALBUM 1 -->
+                <a href="#modal-album1" class="album-card">
+                    <div class="album-cover" style="background-image: url('Day one.jpeg'), linear-gradient(to right, #1d2636, #2d3b54, #1d2636);"></div>
+                    <div class="album-info">
+                        <div class="album-type">Debut Mini Album</div>
+                        <div class="album-title">BORDER : DAY ONE</div>
+                        <span class="view-detail">Klik untuk Detail</span>
+                    </div>
+                </a>
+
+                <!-- ALBUM 2 -->
+                <a href="#modal-album2" class="album-card">
+                    <div class="album-cover" style="background-image: url('DARK BLOOD.jpg'), linear-gradient(to right, #240b0e, #4a1218, #240b0e);"></div>
+                    <div class="album-info">
+                        <div class="album-type">4th Mini Album</div>
+                        <div class="album-title">DARK BLOOD</div>
+                        <span class="view-detail">Klik untuk Detail</span>
+                    </div>
+                </a>
+
+                <!-- ALBUM 3 -->
+                <a href="#modal-album3" class="album-card">
+                    <div class="album-cover" style="background-image: url('Border carnival.jpg'), linear-gradient(to right, #240b0e, #4a1218, #240b0e);"></div>
+                    <div class="album-info">
+                        <div class="album-type">2nd Mini Album</div>
+                        <div class="album-title">BORDER: CARNIVAL</div>
+                        <span class="view-detail">Klik untuk Detail</span>
+                    </div>
+                </a>
+
+                <!-- ALBUM 4 -->
+                <a href="#modal-album4" class="album-card">
+                    <div class="album-cover" style="background-image: url('DIMENSION DILEMMA ENHYPEN.jpg'), linear-gradient(to right, #240b0e, #4a1218, #240b0e);"></div>
+                    <div class="album-info">
+                        <div class="album-type">Album Pertama</div>
+                        <div class="album-title">DIMENSION: DILEMMA</div>
+                        <span class="view-detail">Klik untuk Detail</span>
+                    </div>
+                </a>
+
+                <!-- ALBUM 5 -->
+                <a href="#modal-album5" class="album-card">
+                    <div class="album-cover" style="background-image: url('Album5.jpg'), linear-gradient(to right, #240b0e, #4a1218, #240b0e);"></div>
+                    <div class="album-info">
+                        <div class="album-type">6th Mini Album</div>
+                        <div class="album-title">Desire: Unleash</div>
+                        <span class="view-detail">Klik untuk Detail</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- LAYER POP-UP / MODAL DETAIL ALBUM -->
+    <!-- Pop-up Detail Album 1 -->
+    <div id="modal-album1" class="modal-overlay">
+        <div class="modal-content">
+            <a href="#albums" class="close-btn">&times;</a>
+            <div class="modal-body">
+                <div class="modal-left">
+                    <div class="modal-img" style="background-image: url('Day one.jpeg'), linear-gradient(to right, #1d2636, #2d3b54, #1d2636);"></div>
+                </div>
+                <div class="modal-right">
+                    <span class="album-type">Debut Mini Album</span>
+                    <h2>BORDER : DAY ONE</h2>
+                    <p class="release-date">Tanggal Rilis: 30 November 2020</p>
+                    <hr class="modal-divider">
+                    <h3>Tracklist:</h3>
+                    <ul class="modal-tracks">
+                        <li><a href="https://open.spotify.com/track/0xDVPc5W2jYqO6p9NisCI4?si=4f0c795330b04dbd1" target="_blank">1. Intro : Walk the Line</a></li>
+                        <li class="highlight-track"><a href="https://open.spotify.com/track/69WpV0U7OMNFGyq8I63dcC?si=a9159ffd583940852" target="_blank">2. Given-Taken (Title Track) ✨</a></li>
+                        <li><a href="https://open.spotify.com/track/4eOcd47wPU3ixxYw0spREl?si=dc58fb83fe8d4bac3" target="_blank">3. Let Me In (20 CUBE)</a></li>
+                        <li><a href="https://open.spotify.com/track/3LcFQsZw01tRvjCNLgSmTv?si=d97de746b00744b64" target="_blank">4. 10 Months</a></li>
+                        <li>5. Flicker</li>
+                        <li>6. Outro : Cross the Line</li>
+                    </ul>
+                    <div class="modal-actions">
+                        <a href="https://www.youtube.com/watch?v=nQ6wLuYvGd4" target="_blank" class="btn-mv">Tonton MV Given-Taken</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-up Detail Album 2 -->
+    <div id="modal-album2" class="modal-overlay">
+        <div class="modal-content">
+            <a href="#albums" class="close-btn">&times;</a>
+            <div class="modal-body">
+                <div class="modal-left">
+                    <div class="modal-img" style="background-image: url('DARK BLOOD.jpg'), linear-gradient(to right, #240b0e, #4a1218, #240b0e);"></div>
+                </div>
+                <div class="modal-right">
+                    <span class="album-type">4th Mini Album</span>
+                    <h2>DARK BLOOD</h2>
+                    <p class="release-date">Tanggal Rilis: 22 Mei 2023</p>
+                    <hr class="modal-divider">
+                    <h3>Tracklist:</h3>
+                    <ul class="modal-tracks">
+                        <li>1. Fate</li>
+                        <li class="highlight-track">2. Bite Me (Title Track) ✨</li>
+                        <li>3. Sacrifice (Eat Me Up)</li>
+                        <li>4. Chaconne</li>
+                        <li>5. Bills</li>
+                        <li>6. Karma</li>
+                    </ul>
+                    <div class="modal-actions">
+                        <a href="https://youtu.be/wXFLzODIdUI?si=FZD-afTmygKzSvwK" target="_blank" class="btn-mv">Tonton MV Bite Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-up Detail Album 3 -->
+    <div id="modal-album3" class="modal-overlay">
+        <div class="modal-content">
+            <a href="#albums" class="close-btn">&times;</a>
+            <div class="modal-body">
+                <div class="modal-left">
+                    <div class="modal-img" style="background-image: url('Border carnival.jpg'), linear-gradient(to right, #240b0e, #4a1218, #240b0e);"></div>
+                </div>
+                <div class="modal-right">
+                    <span class="album-type">2nd Mini Album</span>
+                    <h2>Border: Carnival</h2>
+                    <p class="release-date">Tanggal Rilis: 26 April 2021</p>
+                    <hr class="modal-divider">
+                    <h3>Tracklist:</h3>
+                    <ul class="modal-tracks">
+                        <li>1. Intro: The Invitation</li>
+                        <li class="highlight-track">2. Drunk-Dazed (Title Track) ✨</li>
+                        <li>3. FEVER</li>
+                        <li>4. Not For Sale</li>
+                        <li>5. Mixed Up</li>
+                        <li>6. Outro: The Wormhole</li>
+                    </ul>
+                    <div class="modal-actions">
+                        <a href="https://youtu.be/Fc7-Oe0tj5k?si=nK4oH6qSQRLpBAij" target="_blank" class="btn-mv">Tonton MV Drunk-Dazed</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-up Detail Album 4 -->
+    <div id="modal-album4" class="modal-overlay">
+        <div class="modal-content">
+            <a href="#albums" class="close-btn">&times;</a>
+            <div class="modal-body">
+                <div class="modal-left">
+                    <div class="modal-img" style="background-image: url('DIMENSION DILEMMA ENHYPEN.jpg'), linear-gradient(to right, #240b0e, #4a1218, #240b0e);"></div>
+                </div>
+                <div class="modal-right">
+                    <span class="album-type">Album pertama</span>
+                    <h2>DIMENSION: DILEMMA</h2>
+                    <p class="release-date">Tanggal Rilis: 12 Oktober 2021</p>
+                    <hr class="modal-divider">
+                    <h3>Tracklist:</h3>
+                    <ul class="modal-tracks">
+                        <li>1. Intro: Whiteout</li>
+                        <li class="highlight-track">2. Tamed-Dashed (Title Track) ✨</li>
+                        <li>3. UpperSide Dreamin'</li>
+                        <li>4. Just A Little Bit</li>
+                        <li>5. Go Big or Go Home</li>
+                        <li>6. Blockbuster feat. YEONJUN of TOMORROW X TOGETHER</li>
+                        <li>7. Attention, please!</li>
+                        <li>8. interlude:Quistion</li>
+                    </ul>
+                    <div class="modal-actions">
+                        <a href="https://youtu.be/6IRsW_TkyVA?si=FIA4YM8yG0CDOV6B" target="_blank" class="btn-mv">Tonton MV Tamed-Dashed</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-up Detail Album 5 -->
+    <div id="modal-album5" class="modal-overlay">
+        <div class="modal-content">
+            <a href="#albums" class="close-btn">&times;</a>
+            <div class="modal-body">
+                <div class="modal-left">
+                    <div class="modal-img" style="background-image: url('Album5.jpg'), linear-gradient(to right, #240b0e, #4a1218, #240b0e);"></div>
+                </div>
+                <div class="modal-right">
+                    <span class="album-type">6th Mini Album</span>
+                    <h2>Desire: Unleash</h2>
+                    <p class="release-date">Tanggal Rilis: 5 Juni 2025</p>
+                    <hr class="modal-divider">
+                    <h3>Tracklist:</h3>
+                    <ul class="modal-tracks">
+                        <li>1. Flashover</li>
+                        <li class="highlight-track">2. Bad Desire (With of Without You) (Title Track) ✨</li>
+                        <li>3. Outside</li>
+                        <li>4. Loose(Korean Ver.)</li>
+                        <li>5. Helium</li>
+                        <li>6. Too Close</li>
+                        <li>7. Bad Desire(With of Without You) (English Ver.)</li>
+                        <li>8. Loose</li>
+                    </ul>
+                    <div class="modal-actions">
+                        <a href="https://youtu.be/a2Zqdo9RbNs?si=YlaRwCbdCm8cezXv" target="_blank" class="btn-mv">Tonton MV Bad Desire (With of Without You)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seksi Member -->
+    <section id="members" class="container">
+        <h2 class="section-title">The Seven Souls</h2>
+        
+        <div class="member-grid">
+            <a href="#modal-heeseung" class="member-card-link">
+                <div class="member-circle-frame">
+                    <div class="member-photo" style="background-image: url('Heeseung.jpg');"></div>
+                </div>
+                <h3 class="member-name">Heeseung</h3>
+                <span class="member-role">Main Vocalist</span>
+            </a>
+
+            <a href="#modal-jay" class="member-card-link">
+                <div class="member-circle-frame">
+                    <div class="member-photo" style="background-image: url('Jay.jpg');"></div>
+                </div>
+                <h3 class="member-name">Jay</h3>
+                <span class="member-role">Main Rapper</span>
+            </a>
+
+            <a href="#modal-jake" class="member-card-link">
+                <div class="member-circle-frame">
+                    <div class="member-photo" style="background-image: url('Jake.jpg');"></div>
+                </div>
+                <h3 class="member-name">Jake</h3>
+                <span class="member-role">Lead Vocalist</span>
+            </a>
+
+            <a href="#modal-sunghoon" class="member-card-link">
+                <div class="member-circle-frame">
+                    <div class="member-photo" style="background-image: url('Sunghoon.jpg');"></div>
+                </div>
+                <h3 class="member-name">Sunghoon</h3>
+                <span class="member-role">Lead Dancer</span>
+            </a>
+
+            <a href="#modal-sunoo" class="member-card-link">
+                <div class="member-circle-frame">
+                    <div class="member-photo" style="background-image: url('Sunoo.jpg');"></div>
+                </div>
+                <h3 class="member-name">Sunoo</h3>
+                <span class="member-role">Vocalist</span>
+            </a>
+
+            <a href="#modal-jungwon" class="member-card-link">
+                <div class="member-circle-frame">
+                    <div class="member-photo" style="background-image: url('Jungwon.jpg');"></div>
+                </div>
+                <h3 class="member-name">Jungwon</h3>
+                <span class="member-role">Leader</span>
+            </a>
+
+            <a href="#modal-niki" class="member-card-link">
+                <div class="member-circle-frame">
+                    <div class="member-photo" style="background-image: url('Ni-ki.jpg');"></div>
+                </div>
+                <h3 class="member-name">Ni-ki</h3>
+                <span class="member-role">Main Dancer</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Modals Biodata Member -->
+    <div id="modal-heeseung" class="modal-overlay">
+        <div class="modal-content member-modal">
+            <a href="#members" class="close-btn">&times;</a>
+            <div class="modal-member-layout">
+                <div class="modal-member-photo" style="background-image: url('Heeseung.jpg');"></div>
+                <div class="modal-member-bio">
+                    <h2>HEESEUNG</h2>
+                    <hr class="modal-divider">
+                    <p><strong>Nama Lengkap:</strong> Lee Hee Seung (이희승)</p>
+                    <p><strong>Tanggal Lahir:</strong> 15 Oktober 2001</p>
+                    <p><strong>Anggota:</strong> 2020-2026</p>
+                    <p><strong>Posisi:</strong> Center, Main Vocalist, Main Dancer</p>
+                    <p class="bio-desc">Lee Hee Seung lebih dikenal dengan nama panggungnya EVAN, adalah penyanyi, penari, dan komposer asal Korea Selatan. Ia merupakan mantan anggota dari grup vokal pria ENHYPEN. Heeseung lahir di Namyangju, Gyeonggi, Korea Selatan, dan merupakan anak bungsu dari dua bersaudara. Sejak kecil, ia menunjukkan minat besar dalam seni pertunjukan, terutama dalam menyanyi dan menari. Ia menjalani masa pelatihan selama tiga tahun di Big Hit Entertainment sebelum tampil dalam acara I-LAND.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-jay" class="modal-overlay">
+        <div class="modal-content member-modal">
+            <a href="#members" class="close-btn">&times;</a>
+            <div class="modal-member-layout">
+                <div class="modal-member-photo" style="background-image: url('Jay.jpg');"></div>
+                <div class="modal-member-bio">
+                    <h2>JAY</h2>
+                    <hr class="modal-divider">
+                    <p><strong>Nama Lengkap:</strong> Jay Park / Park Jong Seong (박종성)</p>
+                    <p><strong>Tanggal Lahir:</strong> 20 April 2002</p>
+                    <p><strong>Anggota:</strong> Sejak 2020</p>
+                    <p><strong>Posisi:</strong> Main Rapper, Lead Dencer, Vocalist</p>
+                    <p class="bio-desc">Jay Park adalah seorang anak tunggal dari seorang CEO Sinar Tours Dia lahir di Seattle Amerika Serikat dan pindah ke Korea Selatan pada umur 9 tahun. Dia salah satu kontestan I-Land yang menempati peringkat ke-2 dengan total 1.192.889 suara dan berhasil debut sebagai anggota Enhypen. Saat di I-Land Jay membentuk duo unit bersama Sunghoon menampilkan lagu dari NCT U The 7th Sense. Dia juga seorang trainee di Big Hit Music selama 2 tahun 11 bulan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-jake" class="modal-overlay">
+        <div class="modal-content member-modal">
+            <a href="#members" class="close-btn">&times;</a>
+            <div class="modal-member-layout">
+                <div class="modal-member-photo" style="background-image: url('Jake.jpg');"></div>
+                <div class="modal-member-bio">
+                    <h2>JAKE</h2>
+                    <hr class="modal-divider">
+                    <p><strong>Nama Lengkap:</strong> Shim jae-yoon / Jake Sim </p>
+                    <p><strong>Tanggal Lahir:</strong> 15 November 2002</p>
+                    <p><strong>Anggota:</strong> Sejak 2020</p>
+                    <p><strong>Posisi:</strong> Main Rapper, Vocalist, Dencer</p>
+                    <p class="bio-desc">Jake lahir di Seoul, ketika umurnya 9 tahun, dia tinggal di Australia hingga akhirnya balik lagi ke negara kelahirannya untuk mengikuti kompetisi I-Land. Banyak sekali yang mengira Jake merupakan keturunan Australia, tetapi Jake sendiri merupakan murni keturunan korea, meskipun begitu dia pernah mengalami kendala dalam mengucap bahasa korea ketika kembali ke Korea di usianya yang masih 17 tahun.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-sunghoon" class="modal-overlay">
+        <div class="modal-content member-modal">
+            <a href="#members" class="close-btn">&times;</a>
+            <div class="modal-member-layout">
+                <div class="modal-member-photo" style="background-image: url('Sunghoon.jpg');"></div>
+                <div class="modal-member-bio">
+                    <h2>SUNGHUON</h2>
+                    <hr class="modal-divider">
+                    <p><strong>Nama Lengkap:</strong> Park Sung-hoon / Sunghoon </p>
+                    <p><strong>Tanggal Lahir:</strong> 8 Desember 2002</p>
+                    <p><strong>Anggota:</strong> Sejak 2020</p>
+                    <p><strong>Posisi:</strong> Dencer, Vocalist, Visual</p>
+                    <p class="bio-desc">Park Sung-Hoon (Hangul: 박성훈) lahir 8 Desember 2002, lebih dikenal sebagai Sunghoon, adalah penyanyi, pembawa acara, aktor, model dan mantan peseluncur indah asal Korea Selatan. Ia berkompetisi sebagai atlet seluncur indah dari tahun 2010 hingga awal tahun 2020; sementara secara bersamaan menjadi trainee K-pop sejak tahun 2018. Ia pensiun dari olahraga tersebut dan memulai debut sebagai anggota boy band Korea Selatan Enhypen pada bulan November 2020.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-sunoo" class="modal-overlay">
+        <div class="modal-content member-modal">
+            <a href="#members" class="close-btn">&times;</a>
+            <div class="modal-member-layout">
+                <div class="modal-member-photo" style="background-image: url('Sunoo.jpg');"></div>
+                <div class="modal-member-bio">
+                    <h2>SUNOO</h2>
+                    <hr class="modal-divider">
+                    <p><strong>Nama Lengkap:</strong> Kim Sun Woo / Sunoo  </p>
+                    <p><strong>Tanggal Lahir:</strong> 24 Juni 2003</p>
+                    <p><strong>Anggota:</strong> Sejak 2020</p>
+                    <p><strong>Posisi:</strong> Vocalist, Dencer</p>
+                    <p class="bio-desc">Sunoo lahir di Suwon, Gyeonggi-do, Korea Selatan. Ia memiliki seorang kakak perempuan. Sunoo menempuh pendidikan di Sekolah Menengah Chilbo dan Sekolah Menengah Atas Chilbo. Semasa sekolah, ia aktif sebagai anggota OSIS dan ketua kelas. Teman-teman sekolah memanggilnya "Sam-oh oppa".</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-jungwon" class="modal-overlay">
+        <div class="modal-content member-modal">
+            <a href="#members" class="close-btn">&times;</a>
+            <div class="modal-member-layout">
+                <div class="modal-member-photo" style="background-image: url('Jungwon.jpg');"></div>
+                <div class="modal-member-bio">
+                    <h2>JUNGWON</h2>
+                    <hr class="modal-divider">
+                    <p><strong>Nama Lengkap:</strong> Yang Jung-won / Jungwon </p>
+                    <p><strong>Tanggal Lahir:</strong> 9 Februari 2004</p>
+                    <p><strong>Anggota:</strong> Sejak 2020</p>
+                    <p><strong>Posisi:</strong> Leader, Main Vocalist, Main Dencer</p>
+                    <p class="bio-desc">Jungwon lahir di Seoul, Korea Selatan. Ia memiliki satu kakak perempuan. Sebelum menjadi idol, Jungwon merupakan atlet Taekwondo selama 4 tahun dan berlatih selama total 7 tahun. Ia juga sempat menjalani kehidupan trainee di SM Entertainment pada tahun 2017–2018 sebelum pindah ke Big Hit Entertainment (sekarang HYBE) pada 2018. Ia berlatih di Big Hit selama 1 tahun 4 bulan sebelum bergabung dengan I-LAND.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-niki" class="modal-overlay">
+        <div class="modal-content member-modal">
+            <a href="#members" class="close-btn">&times;</a>
+            <div class="modal-member-layout">
+                <div class="modal-member-photo" style="background-image: url('Ni-Ki.jpg');"></div>
+                <div class="modal-member-bio">
+                    <h2>NI-KI</h2>
+                    <hr class="modal-divider">
+                    <p><strong>Nama Lengkap:</strong> Nishimura Riki / Ni-Ki </p>
+                    <p><strong>Tanggal Lahir:</strong> 9 Desember 2005</p>
+                    <p><strong>Anggota:</strong> Sejak 2020</p>
+                    <p><strong>Posisi:</strong> Maknae, Main Dencer, Vocalist, Rapper</p>
+                    <p class="bio-desc">Ni-Ki adalah anggota Enhypen yang berasal dari jepang. Di I-Land dia menempati posisi ke-4 dengan total 1.140.728 suara. Ni-Ki merupakan anak kedua dari tiga bersaudara. Pada usia 13 tahun, Ni-ki seorang diri pergi ke Korea Selatan untuk mewujudkan mimpinya sebagai seorang idol.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seksi Developer -->
+    <section id="developer">
+        <div class="dev-container">
+            <div class="dev-col dev-brand">
+                <h2 class="dev-title">The Creator</h2>
+                <p class="dev-name">Aliya Nur Atiyah</p>
+                <p class="dev-role">Informatics Student UIN SMH Banten</p>
+            </div>
+
+            <div class="dev-col">
+                <h3>Quick Links</h3>
+                <ul class="dev-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Profile</a></li>
+                    <li><a href="#albums">Discography</a></li>
+                    <li><a href="#members">Members</a></li>
+                </ul>
+            </div>
+
+            <div class="dev-col">
+                <h3>Contact & Location</h3>
+                <p class="dev-info">📍 Banten, Indonesia</p>
+                <p class="dev-info">✉️ aliyaatiyahnur@gmail.com</p> 
+                <div class="dev-socials">
+                    <a href="https://github.com/Liya6711" target="_blank" title="GitHub">💻</a>
+                    <a href="https://www.linkedin.com/in/aliya-nur-atiyah-7561763b0" target="_blank" title="LinkedIn">🔗</a>
+                    <a href="https://www.instagram.com/aly_nrtya?igsh=M3VsY2puZnAxbDk=" target="_blank" title="Instagram">📸</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 ENHYPEN Web Concept. By Liya Cantik. 
+    </footer>
+
+</body>
+</html>
